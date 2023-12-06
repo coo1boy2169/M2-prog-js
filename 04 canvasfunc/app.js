@@ -7,7 +7,7 @@ class App {
     g.fillStyle = "yellow"
 
     this.tekenhuis(g, 20, 20)
-    this.tekenKerstBoom(g,   700 ,300)
+    this.tekenKerstBoom(g, 900, 250)
 
 
   }
@@ -84,23 +84,45 @@ class App {
   }
 
 
- 
+
   tekenKerstBoom(g, x, y) {
 
     g.beginPath()
     g.fillStyle = "green";
-    g.moveTo(x,y)
-    g.lineTo(100 + x ,300 + y)
-    g.lineTo(-100 + x , 300 + y)
+    g.moveTo(x, y)
+    g.lineTo(100 + x, 300 + y)
+    g.lineTo(-100 + x, 300 + y)
     g.closePath()
     g.stroke()
     g.fill()
+    g.closePath()
 
-      // stam
+    // piek
 
-      g.beginPath()
-      g.fillStyle = "brown"
-      
+    g.beginPath()
+    g.fillStyle = "orange"
+    g.moveTo(x, y)
+    g.lineTo(1 + x, -50 + y)
+    g.lineTo(10 + x, 0 + y)
+    g.lineTo(-10 + x, 0 + y)
+    g.lineTo(1 + x, -50 + y)
+    g.fill()
+    g.closePath()
+  
+
+
+
+    // stam 
+
+
+    g.beginPath()
+      g.fillStyle =" brown"
+      g.moveTo(x , y )
+      g.lineTo( 1 + x, 300+ y   )
+      g.lineTo( 1 + x  , 400 +  y   )
+      g.stroke()
+      g.fill()
+  
 
   }
 
