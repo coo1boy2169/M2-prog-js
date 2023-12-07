@@ -6,17 +6,17 @@ class App {
         console.log(artiesten)
         console.log(nummers)
 
-        for (let i = 0; i + ": "+ ; i++) {
+        for (let i = 0; i < artiesten.length; i++) {
             let element = artiesten[i];
-            console.log(element)
+            console.log(i + ": " + element)
         }
 
 
 
         // vraag hulp 
-        for ( let i =0; i < nummers; i++){
-        let Numbers = nummers[i];
-        console.log(Numbers)
+        for (let i = 0; i < nummers; i++) {
+            let Numbers = nummers[i];
+            console.log(Numbers)
         }
 
 

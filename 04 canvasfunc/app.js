@@ -87,11 +87,13 @@ class App {
 
   tekenKerstBoom(g, x, y) {
 
+    // boom
+
     g.beginPath()
     g.fillStyle = "green";
     g.moveTo(x, y)
-    g.lineTo(100 + x, 300 + y)
-    g.lineTo(-100 + x, 300 + y)
+    g.lineTo(200 + x, 300+ y)
+    g.lineTo(-200 + x, 300 + y)
     g.closePath()
     g.stroke()
     g.fill()
@@ -103,8 +105,8 @@ class App {
     g.fillStyle = "orange"
     g.moveTo(x, y)
     g.lineTo(1 + x, -50 + y)
-    g.lineTo(10 + x, 0 + y)
-    g.lineTo(-10 + x, 0 + y)
+    g.lineTo(10 + x, 10 + y)
+    g.lineTo(-10 + x, 10 + y)
     g.lineTo(1 + x, -50 + y)
     g.fill()
     g.closePath()
@@ -117,14 +119,43 @@ class App {
 
     g.beginPath()
       g.fillStyle =" brown"
-      g.moveTo(x , y )
-      g.lineTo( 1 + x, 300+ y   )
-      g.lineTo( 1 + x  , 400 +  y   )
-      g.stroke()
+     g.rect(x-35, y+300, 70 , 90)
+     g.fill()
+     g.stroke()
+     g.closePath()
+
+
+    // ballen
+
+    function drawBall(g, x, y){
+      g.beginPath()
+      
+      g.arc( x, y , 10 ,0 , Math.PI*2)
+      
       g.fill()
+      g.closePath()
+      g.stroke()
+    }
+
+    for(let i = 0;i < 20; i++){
+      drawBall(g, x + Math.random()*100 - 50, y + Math.random()*299 )
+    }
   
+     RandomColor()
+     {
+      let array = [ " blue", " red " , " green ", " orange" , " purple"  ]
+      let random = Math.floor(Math.random() * array.length)
+      return array[random]
+    }
+    
+ 
+
 
   }
+
+
+  
+
 
 }
 
@@ -134,5 +165,6 @@ class App {
 
 let app = new App()
 app.runApplication()
+//app.drawBall(g , Math.random()* 30 , Math.random() * 400)
 
 
