@@ -141,12 +141,7 @@ class App {
       drawBall(g, x + Math.random()*100 - 50, y + Math.random()*299 )
     }
   
-     RandomColor()
-     {
-      let array = [ " blue", " red " , " green ", " orange" , " purple"  ]
-      let random = Math.floor(Math.random() * array.length)
-      return array[random]
-    }
+    
     
  
 

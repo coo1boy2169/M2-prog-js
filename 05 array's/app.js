@@ -38,7 +38,7 @@ class App {
             console.log(headersByCssClass[i].innerText)
         }
 
-                console.log()
+                
 
 
 
