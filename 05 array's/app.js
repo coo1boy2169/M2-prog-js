@@ -3,6 +3,7 @@ class App {
         let artiesten = ["Bieber", "BlackPink", "LadyGaGa"]
         let nummers = [2, 5, 7]
         let headersByCssClass = document.getElementsByClassName("bandName")
+        let data= ["form software werkt aan nieuw  porject" , " Mario kart 9 komt eindelijk eraan!" , " het nieuwe" , "  Game " , " komt eindelijk er aan!!!!"]
         console.log("hello world!")
         console.log(artiesten)
         console.log(nummers)
@@ -15,7 +16,7 @@ class App {
 
 
         // vraag hulp 
-        for (let i = 0; i < nummers; i++) {
+        for (let i = 0; i < nummers.length; i++) {
             let Numbers = nummers[i];
             console.log(Numbers)
         }
@@ -33,13 +34,12 @@ class App {
         artiesten.splice(indexToRemove, 1)
 
         for (let i = 0; i < headersByCssClass.length; i++) {
-            let Header = headersByCssClass[0].innerText = "nieuws ";
-            headersByCssClass[1].innerText = "reviews";
-            headersByCssClass[2].innerText = "commentaar ";
-            headersByCssClass[3].innerText = " sterren";
-            headersByCssClass[4].innerText = " kritiek";
+            headersByCssClass[i].innerText = i +": "+data[i];
             console.log(headersByCssClass[i].innerText)
         }
+
+                console.log()
+
 
 
 
