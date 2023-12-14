@@ -1,6 +1,7 @@
 class App {
   runApplication() {
-    const width = document.body.clientWidth, height = document.body.clientHeight
+    const width = document.body.clientWidth, 
+          height = document.body.clientHeight
     
     let canvas = document.getElementById("canvasId")
     canvas.width = width;
@@ -22,7 +23,7 @@ class App {
 
     console.log(document.body.clientWidth, window.innerWidth)
 
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 80; i++) {
       drawBall(g, Math.random() * width, Math.random() * height)
     }
 

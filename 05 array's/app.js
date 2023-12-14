@@ -22,16 +22,20 @@ class App {
         }
 
 
-        artiesten.push(" Bob dylan", " prince ")
+        artiesten.push("Bob dylan", " prince ")
 
         for (let i = 0; i < artiesten.length; i++) {
             let element = artiesten[i];
             console.log(i + ": " + element)
         }
 
-        let indexToRemove = artiesten.indexOf("bob dylan")
+        let indexToRemove = artiesten.indexOf("Bob dylan")
+        
 
         artiesten.splice(indexToRemove, 1)
+
+        console.log(artiesten)
+
 
         for (let i = 0; i < headersByCssClass.length; i++) {
             headersByCssClass[i].innerText = i +": "+data[i];
