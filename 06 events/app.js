@@ -2,15 +2,14 @@ class App
 {
     runApplication()
     {
-        let uitButton =    document.getElementById("myButton")
-     
+        let uitButton = document.getElementById("myButton")
        console.log("hello world!")
 
-       let localFunction = function (e)
-       {
-        console.log("click")
-       };
-       uitButton.addEventListener("click" , localFunction);
+       uitButton.addEventListener("click" , (e)=>
+       {      
+        console.log("click!");
+       })
+
 
     }
 }
