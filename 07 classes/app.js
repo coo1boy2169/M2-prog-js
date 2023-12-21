@@ -5,15 +5,21 @@ class App {
     }
 }
 
+
 let app = new App()
 app.runApplication()
 
+
+
 class Greet {
-    constructor() {
+    constructor() 
+    {
+        this.greeting = "Greetings!"
     }
 
     showGreeting() {
-        console.log("Good afternoon")
+
+        console.log("Greeting van binenn " + this.greeting) 
     }
 }
 
@@ -23,11 +29,12 @@ greet.showGreeting();
 
 class GoodBye {
     constructor() {
+        this.farwel = "See u next time!"
     }
 
     showGoodbye()
     {
-        console.log("bye bye")
+        console.log("see u next time  van binenn " + this.farwel)
     }
 }
 
@@ -35,8 +42,7 @@ let bye = new GoodBye()
 bye.showGoodbye()
 
 
-bye.showGoodbye()
-greet.showGreeting();
+
 
 bye.showGoodbye()
 greet.showGreeting();
@@ -49,3 +55,9 @@ greet.showGreeting();
 
 bye.showGoodbye()
 greet.showGreeting();
+
+bye.showGoodbye()
+greet.showGreeting();
+
+console.log("greeting van buiten "  + greet.greeting)
+console.log(" see u next time from outside" + bye.farwel)
