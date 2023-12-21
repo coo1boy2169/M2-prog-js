@@ -3,8 +3,13 @@ class App {
         console.log("hello world!")
 
 
-        let dino = new Dino()
+        let dino = new Dino("T-Rex" , true , 69)
+        let plantEter = new Dino ("Triceratops" , false , 20)
         console.log(dino)
+        console.log(plantEter)
+
+        dino.eatFood(plantEter)
+        console.log("leeft " +  plantEter.Name +  "? " + plantEter.leeft)
     }
 }
 
@@ -12,10 +17,23 @@ class App {
 
 
 class Dino {
+
+    eatFood(foodToEat){
+
+        foodToEat.leeft = false
+        this.honger = false 
+        
+        console.log("ik ben een "  + this.Name)
+        console.log("mijn honger " + this.honger)
+    } 
+
+
     constructor(Name, vleeseter, leeftijd) {
-        this.Name = "t- rex "
-        this.vleeseter = true
-        this.leeftijd = 69
+        this.Name = Name;
+        this.vleeseter = vleeseter
+        this.leeftijd = leeftijd
+        this.leeft = false
+        this.honger = false
     }
 }
 
