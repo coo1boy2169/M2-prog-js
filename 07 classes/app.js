@@ -1,8 +1,6 @@
-class App 
-{
-    runApplication()
-    {
-       console.log("hello world!")
+class App {
+    runApplication() {
+        console.log("hello world!")
 
     }
 }
@@ -10,26 +8,44 @@ class App
 let app = new App()
 app.runApplication()
 
-class Greet
-{
-    constructor()
-    {
-        console.log("Greetings!")
+class Greet {
+    constructor() {
+    }
 
+    showGreeting() {
+        console.log("Good afternoon")
     }
 }
 
-let greet= new Greet() 
+let greet = new Greet()
+greet.showGreeting();
 
 
-class GoodBye
-{
-    constructor()
+class GoodBye {
+    constructor() {
+    }
+
+    showGoodbye()
     {
-        console.log( " Bye Bye")
+        console.log("bye bye")
     }
 }
 
 let bye = new GoodBye()
+bye.showGoodbye()
 
 
+bye.showGoodbye()
+greet.showGreeting();
+
+bye.showGoodbye()
+greet.showGreeting();
+
+bye.showGoodbye()
+greet.showGreeting();
+
+bye.showGoodbye()
+greet.showGreeting();
+
+bye.showGoodbye()
+greet.showGreeting();
